@@ -14,7 +14,7 @@ import java.util.List;
 @Slf4j
 public class BetController {
     @Autowired
-    BetService betService;
+    private BetService betService;
 
     @GetMapping
     public List<Bet> getAllBets(@RequestParam Long userId){
